@@ -3,13 +3,15 @@ var copia_confronto = "";
 var palindroma = false;
 console.log(parola_inserita.length);
 
-for (i = parola_inserita.length; i < 0; i--) {
+for (i = parola_inserita.length; i >= 0; i--) {
   copia_confronto = copia_confronto + parola_inserita.charAt(i);
-  if (parola_inserita = copia_confronto){
-    var palindroma = true;
-  }
 }
-
-if (palindroma = true){
+if (parola_inserita == copia_confronto){
+  var palindroma = true;
+}
+if (palindroma == true){
   document.writeln("la parola è palindroma");
+}
+else {
+  document.writeln("la parola non è palindroma");
 }
